@@ -8,44 +8,22 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">114,960</td><td>groupOne, Close, Launch</td><td>groupTwo</td></tr>
+<tr><th colspan="8">ParellelTestSuite</th></tr>
+<tr><td><a href="#t0">TestTwo</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">39,323</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestOne</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">85,723</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">9</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">125,046</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">testClasses.HomePageTestClass</td><td><a href="#m0">verifyRegisterAPatientTileIsClickable</a></td><td rowspan="1">1722404237246</td><td rowspan="1">99</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testClasses.HomePageTestClass</td><td><a href="#m1">verifyAllTilesAreDisplayedInHomePage</a></td><td rowspan="1">1722404231630</td><td rowspan="1">3005</td></tr><tr class="passedeven"><td><a href="#m2">verifyRegisterAPatientTileIsClickable</a></td><td rowspan="1">1722404250016</td><td rowspan="1">13467</td></tr><tr class="passedodd"><td rowspan="4">testClasses.LoginTestClass</td><td><a href="#m3">verifySuccessfullLogin</a></td><td rowspan="1">1722404276415</td><td rowspan="1">8956</td></tr><tr class="passedodd"><td><a href="#m4">verifyUnsuccessfulLogin</a></td><td rowspan="3">1722404315079</td><td rowspan="3">1514</td></tr><tr class="passedodd"><td><a href="#m5">verifyUnsuccessfulLogin</a></td></tr><tr class="passedodd"><td><a href="#m6">verifyUnsuccessfulLogin</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParellelTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestTwo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testClasses.HomePageTestClass</td><td><a href="#m0">verifyAllTilesAreDisplayedInHomePage</a></td><td rowspan="1">1722527559409</td><td rowspan="1">4725</td></tr><tr class="passedeven"><td><a href="#m1">verifyRegisterAPatientTileIsClickable</a></td><td rowspan="1">1722527572542</td><td rowspan="1">13014</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestOne &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">testClasses.LoginTestClass</td><td><a href="#m2">verifyAllLocationSessionsAreDisplayedOrNotInLoginPage</a></td><td rowspan="1">1722527631964</td><td rowspan="1">91</td></tr><tr class="passedeven"><td><a href="#m3">verifySuccessfullLogin</a></td><td rowspan="1">1722527567613</td><td rowspan="1">5296</td></tr><tr class="passedeven"><td><a href="#m4">verifyTheExpectedPageisOpensWhileHittingTheUrl</a></td><td rowspan="1">1722527558728</td><td rowspan="1">219</td></tr><tr class="passedeven"><td><a href="#m5">verifyUnsuccessfulLogin</a></td><td rowspan="3">1722527610000</td><td rowspan="3">1958</td></tr><tr class="passedeven"><td><a href="#m6">verifyUnsuccessfulLogin</a></td></tr><tr class="passedeven"><td><a href="#m7">verifyUnsuccessfulLogin</a></td></tr><tr class="passedeven"><td><a href="#m8">veryfyLogoIsDisplayedOrNotInLoginPage</a></td><td rowspan="1">1722527620917</td><td rowspan="1">71</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testClasses.HomePageTestClass#verifyRegisterAPatientTileIsClickable</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
-  (Session info: chrome=127.0.6533.73)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20cd1b5e46acdbc53fea5ee30e9d1fdd, findElement {using=id, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\iamha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55245}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55245/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20cd1b5e46acdbc53fea5ee30e9d1fdd
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
-	at utilities.GeneralUtilities.typeOnElement(GeneralUtilities.java:13)
-	at pageClasses.LoginPageClass.login(LoginPageClass.java:64)
-	at testClasses.HomePageTestClass.verifyRegisterAPatientTileIsClickable(HomePageTestClass.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testClasses.HomePageTestClass#verifyAllTilesAreDisplayedInHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testClasses.HomePageTestClass#verifyRegisterAPatientTileIsClickable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestTwo</h2><h3 id="m0">testClasses.HomePageTestClass#verifyAllTilesAreDisplayedInHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testClasses.HomePageTestClass#verifyRegisterAPatientTileIsClickable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOne</h2><h3 id="m2">testClasses.LoginTestClass#verifyAllLocationSessionsAreDisplayedOrNotInLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">testClasses.LoginTestClass#verifySuccessfullLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testClasses.LoginTestClass#verifyUnsuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>addz</td><td>Admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testClasses.LoginTestClass#verifyUnsuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>Admin</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testClasses.LoginTestClass#verifyUnsuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>adMins</td><td>Admin</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testClasses.LoginTestClass#verifyTheExpectedPageisOpensWhileHittingTheUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testClasses.LoginTestClass#verifyUnsuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>adMins</td><td>Admin</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testClasses.LoginTestClass#verifyUnsuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>Admin</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testClasses.LoginTestClass#verifyUnsuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>addz</td><td>Admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testClasses.LoginTestClass#veryfyLogoIsDisplayedOrNotInLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

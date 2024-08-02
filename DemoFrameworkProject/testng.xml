@@ -4,6 +4,7 @@
 	<listeners>
 		<listener class-name="extentReport.TestListener"></listener>
 	</listeners>
+	<parameter name="browser" value="chrome"></parameter>
 	<test thread-count="2" name="TestOne">
 		<classes>
 			<class name="testClasses.LoginTestClass" />
