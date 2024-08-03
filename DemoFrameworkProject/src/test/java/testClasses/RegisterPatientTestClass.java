@@ -28,9 +28,10 @@ public class RegisterPatientTestClass extends BaseClass{
 		int agem=Integer.parseInt(rp.readIntegerData(8, 1)) ;
 		int ph=Integer.parseInt(rp.readIntegerData(11, 1));
 		String phn=""+ph;
-		rp.registerPatient(rp.readStringData(5, 1),rp.readStringData(6, 1),agey,agem,rp.readStringData(9, 1),rp.readStringData(10, 1),phn);
+		String givenName=rp.readPatientGivenName();
+		rp.registerPatient(givenName,rp.readStringData(6, 1),agey,agem,rp.readStringData(9, 1),rp.readStringData(10, 1),phn);
 		p=new PatientPageClass(driver);
 		String actual_result = p.getTextOfHomePageText();
-		Assert.assertTrue(actual_result.contains("Akku"));
+		Assert.assertTrue(actual_result.contains(givenName));
 	}
 }

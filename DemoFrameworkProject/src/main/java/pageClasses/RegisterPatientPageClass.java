@@ -10,12 +10,14 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.ExcelReadClass;
 import utilities.ExplicitWaitClass;
 import utilities.GeneralUtilities;
+import utilities.RandomDataGeneration;
 
 public class RegisterPatientPageClass {
 
 	WebDriver driver;
 	GeneralUtilities glu = new GeneralUtilities();
 	ExplicitWaitClass wait = new ExplicitWaitClass();
+	// RandomDataGeneration random=new RandomDataGeneration();
 
 	public RegisterPatientPageClass(WebDriver driver) {
 		this.driver = driver;
@@ -52,7 +54,8 @@ public class RegisterPatientPageClass {
 	@FindBy(id = "submit")
 	WebElement submitButton;
 
-	public void registerPatient(String givenNameOne,String lastName,int ageYear,int ageMonth,String address,String countryOne,String phone) {
+	public void registerPatient(String givenNameOne, String lastName, int ageYear, int ageMonth, String address,
+			String countryOne, String phone) {
 		glu.typeOnElement(givenName,givenNameOne);
 		glu.typeOnElement(familyName, lastName);
 		glu.clickOnElement(nextButton);
@@ -76,15 +79,19 @@ public class RegisterPatientPageClass {
 		glu.clickOnElement(submitButton);
 
 	}
-	
+
+	public String readPatientGivenName() {
+		return RandomDataGeneration.getGivenName();
+	}
+
 	/*
 	 * Excel Read Starts
 	 */
-	public String readStringData(int row,int col) throws IOException {
+	public String readStringData(int row, int col) throws IOException {
 		return ExcelReadClass.readStringData(row, col);
 	}
-	
-	public String readIntegerData(int row,int col) throws IOException {
+
+	public String readIntegerData(int row, int col) throws IOException {
 		return ExcelReadClass.readInegerData(row, col);
 	}
 	/*
