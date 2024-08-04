@@ -18,7 +18,15 @@ public class LoginTestClass extends BaseClass {
 		lp = new LoginPageClass(driver);
 		String username = lp.readStringData(1, 0);
 		String password = lp.readStringData(1, 1);
-		lp.login(username, password);
+		//lp.login(username, password);
+		/*
+		 * chaining
+		 */
+		lp.typeOnUsername(username).typeOnPassword(password).clickOnElement().clickOnButton();
+		
+		/*
+		 * chaing end
+		 */
 		h = new HomePageClass(driver);
 		String actual_result = h.getTextOfHomePageText();
 		Assert.assertEquals(actual_result, lp.readStringData(3, 0));

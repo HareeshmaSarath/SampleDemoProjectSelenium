@@ -4,7 +4,7 @@
 	<test thread-count="1" name="Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="testClasses.RegisterPatientTestClass" />
+			<class name="testClasses.LoginTestClass" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

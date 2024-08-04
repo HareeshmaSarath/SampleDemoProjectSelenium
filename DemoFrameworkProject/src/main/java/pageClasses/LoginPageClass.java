@@ -67,6 +67,33 @@ public class LoginPageClass {
 		gu.clickOnElement(inpatientWard);
 		gu.clickOnElement(loginButton);
 	}
+	/*
+	 * chaining of methods
+	 */
+	public LoginPageClass typeOnUsername(String username) {
+		gu.typeOnElement(usernameTextBox, username);
+		return this;
+	}
+	
+	public LoginPageClass typeOnPassword(String password) {
+		gu.typeOnElement(passwordTextBox, password);
+		return this;
+	}
+	
+	public LoginPageClass clickOnElement() {
+		ew.elementToBeClickableWait(driver, inpatientWard);
+		gu.clickOnElement(inpatientWard);
+		return this;
+	}
+	
+	public LoginPageClass clickOnButton() {
+		gu.clickOnElement(loginButton);
+		return this;
+	}
+	
+	/*
+	 * end chaining
+	 */
 
 	public String getTextOfErrorMessageFromLoginPage() {
 		ew.visibilityOfWait(driver, errorMessage);
