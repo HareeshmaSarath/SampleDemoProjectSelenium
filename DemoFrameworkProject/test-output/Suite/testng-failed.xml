@@ -6,12 +6,9 @@
     <classes>
       <class name="testClasses.LoginTestClass">
         <methods>
-          <include name="verifyUnsuccessfulLogin"/>
-          <include name="verifyAllLocationSessionsAreDisplayedOrNotInLoginPage"/>
-          <include name="veryfyLogoIsDisplayedOrNotInLoginPage"/>
           <include name="afterMethod"/>
-          <include name="createReport"/>
           <include name="beforeMethod"/>
+          <include name="createReport"/>
           <include name="verifySuccessfullLogin"/>
         </methods>
       </class> <!-- testClasses.LoginTestClass -->
